@@ -4,6 +4,5 @@
     <name>android.hardware.media.c2</name>
     <version>1</version>
     <fqname>IComponentStore/default</fqname>
-    <fqname>IComponentStore/dolby</fqname>
   </hal>
 </manifest>

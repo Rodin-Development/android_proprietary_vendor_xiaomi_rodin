@@ -350,8 +350,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/odm/firmware/rodin_gtp_thp_config_vendor.ini:$(TARGET_COPY_OUT_ODM)/firmware/rodin_gtp_thp_config_vendor.ini \
     vendor/xiaomi/rodin/proprietary/odm/mitee/ta/123af5d1-d6f5-cc54-f78fa19030b2e76a.ta:$(TARGET_COPY_OUT_ODM)/mitee/ta/123af5d1-d6f5-cc54-f78fa19030b2e76a.ta \
     vendor/xiaomi/rodin/proprietary/odm/mitee/ta/a3ba6512-6e0e-4065-93165e4a7d04ca08.ta:$(TARGET_COPY_OUT_ODM)/mitee/ta/a3ba6512-6e0e-4065-93165e4a7d04ca08.ta \
-    vendor/xiaomi/rodin/proprietary/product/etc/device_features/rodin.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/rodin.xml \
-    vendor/xiaomi/rodin/proprietary/system/etc/init/mtectrl.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/mtectrl.rc \
     vendor/xiaomi/rodin/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
     vendor/xiaomi/rodin/proprietary/system/etc/public.libraries-xiaomi.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-xiaomi.txt \
     vendor/xiaomi/rodin/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
@@ -671,13 +669,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/wifi/dla/mtk_qoe_predict.dla:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/dla/mtk_qoe_predict.dla \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/wifi/dla/sgame_latency_predict.dla:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/dla/sgame_latency_predict.dla \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/wifi/nvram/wfnv_desc_data_soc70.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram/wfnv_desc_data_soc70.bin \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/wifi/nvram/wfnv_desc_map_soc70.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram/wfnv_desc_map_soc70.bin \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/xiaomi/rodin/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/xiaomi/rodin/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
     vendor/xiaomi/rodin/proprietary/vendor/firmware/aw8697_rtp_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp_1.bin \
