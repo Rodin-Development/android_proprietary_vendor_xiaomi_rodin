@@ -51,6 +51,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6899/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6899/ISP_mapping.db \
     vendor/xiaomi/rodin/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6899/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6899/ISP_param.db \
     vendor/xiaomi/rodin/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6899/ISP_info.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6899/ISP_info.db \
+    vendor/xiaomi/rodin/proprietary/odm/etc/1khz.wav:$(TARGET_COPY_OUT_ODM)/etc/1khz.wav \
+    vendor/xiaomi/rodin/proprietary/odm/etc/RES1K.wav:$(TARGET_COPY_OUT_ODM)/etc/RES1K.wav \
     vendor/xiaomi/rodin/proprietary/odm/etc/bottom_spk.wav:$(TARGET_COPY_OUT_ODM)/etc/bottom_spk.wav \
     vendor/xiaomi/rodin/proprietary/odm/etc/bottom_spk_hp.wav:$(TARGET_COPY_OUT_ODM)/etc/bottom_spk_hp.wav \
     vendor/xiaomi/rodin/proprietary/odm/etc/camera/CFR_para_UW.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/CFR_para_UW.bin \
@@ -206,6 +208,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/odm/etc/charger/BAA_config_common.json:$(TARGET_COPY_OUT_ODM)/etc/charger/BAA_config_common.json \
     vendor/xiaomi/rodin/proprietary/odm/etc/charger/BAA_config_rodin.json:$(TARGET_COPY_OUT_ODM)/etc/charger/BAA_config_rodin.json \
     vendor/xiaomi/rodin/proprietary/odm/etc/cit_param_config.json:$(TARGET_COPY_OUT_ODM)/etc/cit_param_config.json \
+    vendor/xiaomi/rodin/proprietary/odm/etc/coverVibrationTest.wav:$(TARGET_COPY_OUT_ODM)/etc/coverVibrationTest.wav \
     vendor/xiaomi/rodin/proprietary/odm/etc/cust_color.xml:$(TARGET_COPY_OUT_ODM)/etc/cust_color.xml \
     vendor/xiaomi/rodin/proprietary/odm/etc/device_info_qr_config.yml:$(TARGET_COPY_OUT_ODM)/etc/device_info_qr_config.yml \
     vendor/xiaomi/rodin/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
@@ -285,6 +288,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/odm/etc/o10_36_02_0b_dsc_vdo_pq.xml:$(TARGET_COPY_OUT_ODM)/etc/o10_36_02_0b_dsc_vdo_pq.xml \
     vendor/xiaomi/rodin/proprietary/odm/etc/o10_42_02_0a_dsc_vdo_cust_silky_brightness.xml:$(TARGET_COPY_OUT_ODM)/etc/o10_42_02_0a_dsc_vdo_cust_silky_brightness.xml \
     vendor/xiaomi/rodin/proprietary/odm/etc/o10_42_02_0a_dsc_vdo_pq.xml:$(TARGET_COPY_OUT_ODM)/etc/o10_42_02_0a_dsc_vdo_pq.xml \
+    vendor/xiaomi/rodin/proprietary/odm/etc/rcv.wav:$(TARGET_COPY_OUT_ODM)/etc/rcv.wav \
+    vendor/xiaomi/rodin/proprietary/odm/etc/rcv_pink.wav:$(TARGET_COPY_OUT_ODM)/etc/rcv_pink.wav \
     vendor/xiaomi/rodin/proprietary/odm/etc/sensors/lightSensorCali.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorCali.json \
     vendor/xiaomi/rodin/proprietary/odm/etc/sensors/lightSensorConfig.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorConfig.json \
     vendor/xiaomi/rodin/proprietary/odm/etc/sensors/lightSensorConfigSec.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorConfigSec.json \
@@ -306,32 +311,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-hp-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-hp-mgame.conf \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-hp-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-hp-normal.conf \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-huanji.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-huanji.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-4k.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-4k.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-arvr.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-arvr.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-camera.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-camera.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-cclassvideo.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-cclassvideo.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-cgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-cgame.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-class0.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-class0.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-highfps.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-highfps.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-hp-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-hp-mgame.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-hp-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-hp-normal.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-huanji.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-huanji.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-map.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-map.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-mgame.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-navigation.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-navigation.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-nolimits.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-nolimits.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-normal.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-per-class0.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-per-class0.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-per-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-per-normal.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-per-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-per-video.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-phone.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-phone.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-tgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-tgame.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-video.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-videochat.conf \
-    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-in-yuanshen.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-in-yuanshen.conf \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-mgame.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-mgame.conf \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-navigation.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-navigation.conf \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-nolimits.conf \
+    vendor/xiaomi/rodin/proprietary/odm/etc/thermal-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-normal.conf \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-per-class0.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-class0.conf \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-per-normal.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-normal.conf \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-per-video.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-per-video.conf \
@@ -342,6 +325,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-videochat.conf \
     vendor/xiaomi/rodin/proprietary/odm/etc/thermal-yuanshen.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-yuanshen.conf \
     vendor/xiaomi/rodin/proprietary/odm/etc/top_spk.wav:$(TARGET_COPY_OUT_ODM)/etc/top_spk.wav \
+    vendor/xiaomi/rodin/proprietary/odm/etc/ultrasound.wav:$(TARGET_COPY_OUT_ODM)/etc/ultrasound.wav \
     vendor/xiaomi/rodin/proprietary/odm/firmware/Conf_MultipleTest.ini:$(TARGET_COPY_OUT_ODM)/firmware/Conf_MultipleTest.ini \
     vendor/xiaomi/rodin/proprietary/odm/firmware/focaltech_ts_fw_rodin.bin:$(TARGET_COPY_OUT_ODM)/firmware/focaltech_ts_fw_rodin.bin \
     vendor/xiaomi/rodin/proprietary/odm/firmware/goodix_cfg_group_rodin.bin:$(TARGET_COPY_OUT_ODM)/firmware/goodix_cfg_group_rodin.bin \
@@ -353,12 +337,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/odm/mitee/ta/123af5d1-d6f5-cc54-f78fa19030b2e76a.ta:$(TARGET_COPY_OUT_ODM)/mitee/ta/123af5d1-d6f5-cc54-f78fa19030b2e76a.ta \
     vendor/xiaomi/rodin/proprietary/odm/mitee/ta/a3ba6512-6e0e-4065-93165e4a7d04ca08.ta:$(TARGET_COPY_OUT_ODM)/mitee/ta/a3ba6512-6e0e-4065-93165e4a7d04ca08.ta \
     vendor/xiaomi/rodin/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
-    vendor/xiaomi/rodin/proprietary/system/etc/public.libraries-xiaomi.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-xiaomi.txt \
+    vendor/xiaomi/rodin/proprietary/system_ext/etc/init/android.hardware.audio.parameter_parser.service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/android.hardware.audio.parameter_parser.service.rc \
     vendor/xiaomi/rodin/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
-    vendor/xiaomi/rodin/proprietary/system_ext/etc/permissions/com.android.carrierconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.carrierconfig.xml \
     vendor/xiaomi/rodin/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
-    vendor/xiaomi/rodin/proprietary/system_ext/etc/public.libraries-hyperos.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-hyperos.txt \
-    vendor/xiaomi/rodin/proprietary/system_ext/etc/public.libraries-xiaomi.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-xiaomi.txt \
     vendor/xiaomi/rodin/proprietary/system_ext/etc/sysconfig/com.mediatek.ims.config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.ims.config.xml \
     vendor/xiaomi/rodin/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db \
     vendor/xiaomi/rodin/proprietary/vendor/data/model/VEdynamic.dla:$(TARGET_COPY_OUT_VENDOR)/data/model/VEdynamic.dla \
@@ -371,6 +352,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/data/model/object_detection.dla:$(TARGET_COPY_OUT_VENDOR)/data/model/object_detection.dla \
     vendor/xiaomi/rodin/proprietary/vendor/data/model/x2_SR_dynamic.dla:$(TARGET_COPY_OUT_VENDOR)/data/model/x2_SR_dynamic.dla \
     vendor/xiaomi/rodin/proprietary/vendor/data/model/x3_SR_dynamic.dla:$(TARGET_COPY_OUT_VENDOR)/data/model/x3_SR_dynamic.dla \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/AudioDump_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/AudioDump_dynamic.ds \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/AudioLog_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/AudioLog_dynamic.ds \
     vendor/xiaomi/rodin/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/VideoLog_dynamic.ds:$(TARGET_COPY_OUT_VENDOR)/etc/VideoLog_dynamic.ds \
     vendor/xiaomi/rodin/proprietary/vendor/etc/aidl/hfp/hfp_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aidl/hfp/hfp_codec_capabilities.xml \
@@ -382,7 +365,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/etc/apdb/APDB_MT6899___W2439_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6899___W2439_ENUM \
     vendor/xiaomi/rodin/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/audio_device_fs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device_fs.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
@@ -513,12 +495,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/etc/audio_param/mis_head.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/mis_head.bin \
     vendor/xiaomi/rodin/proprietary/vendor/etc/audio_param/mis_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/mis_spk.bin \
     vendor/xiaomi/rodin/proprietary/vendor/etc/audio_param/mis_spk_alt1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/mis_spk_alt1.bin \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/audio_spatial_db_reduce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_spatial_db_reduce.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/audiodata.db:$(TARGET_COPY_OUT_VENDOR)/etc/audiodata.db \
     vendor/xiaomi/rodin/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/aurisys_config_hifi3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_hifi3.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/aurisys_config_hifi3_fs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_hifi3_fs.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/aurisys_config_rv.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_rv.xml \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/bluetooth_a2dp_offload_ums_offload_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_a2dp_offload_ums_offload_audio_policy_configuration.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/af_class_all.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_class_all.dla \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/af_class_human.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_class_human.dla \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/af_classify.dla:$(TARGET_COPY_OUT_VENDOR)/etc/camera/af_classify.dla \
@@ -531,7 +511,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/beauty/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty/libarcsoft_beautyshot.so \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_perf.json \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/cameraopt_vendor.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/cameraopt_vendor.json \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/camera/gma_custom.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/gma_custom.txt \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/ldc/libwa_widelens_undistort.so:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ldc/libwa_widelens_undistort.so \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/mimotion_c1b.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_c1b.bin \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/mimotion_c1w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_c1w.bin \
@@ -541,14 +520,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/mimotion_f4w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f4w.bin \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/mimotion_f5b.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f5b.bin \
     vendor/xiaomi/rodin/proprietary/vendor/etc/camera/mimotion_f5w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f5w.bin \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/camera/mt6899/gma_custom.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mt6899/gma_custom.txt \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/dolby/dax-fs19xx-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-fs19xx-spatializer.xml \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/dolby/dax-fs19xx.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-fs19xx.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/ecc_list_OP09.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP09.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/ecc_list_OP12.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP12.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/ecc_list_OP17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP17.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/ecc_list_OP18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP18.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/ecc_list_OP236.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP236.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
@@ -576,11 +553,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init.insmod.mt6899.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.mt6899.cfg \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/init/android.hardware.audio.service-aidl.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service-aidl.mediatek.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.mitee.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/android.hardware.graphics.composer@3.3-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@3.3-service.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/android.hardware.identity@5.0-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.identity@5.0-service.mitee.rc \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/init/android.hardware.media.c2-mediatek-64b.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2-mediatek-64b.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/android.hardware.security.keymint.mitee@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint.mitee@3.0-service.rc \
@@ -588,6 +565,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/arm.mali.platform-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/arm.mali.platform-mediatek.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/gpuserv-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gpuserv-default.rc \
@@ -604,11 +582,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/secure_element-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secure_element-service.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/touch_boost.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/touch_boost.rc \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms-service.rc \
@@ -620,16 +598,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/rodin/proprietary/vendor/etc/le_audio_codec_capabilities.xml:$(TARGET_COPY_OUT_VENDOR)/etc/le_audio_codec_capabilities.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/libnfc-nxp-pnscr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp-pnscr.conf \
     vendor/xiaomi/rodin/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/xiaomi/rodin/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/xiaomi/rodin/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.mitee.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/permissions/android.hardware.identity_credential.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.identity_credential.mitee.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/permissions/android.hardware.telephony.ims.prebuilt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.prebuilt.xml \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/permissions/camera_extensions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/camera_extensions.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/pq_flag.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pq_flag.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
     vendor/xiaomi/rodin/proprietary/vendor/etc/sensor_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_diag.cfg \
     vendor/xiaomi/rodin/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
     vendor/xiaomi/rodin/proprietary/vendor/etc/smartpa_param/AW_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/AW_DSP.bin \
@@ -643,32 +620,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rodin/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/spk_cal_silence.wav:$(TARGET_COPY_OUT_VENDOR)/etc/spk_cal_silence.wav \
     vendor/xiaomi/rodin/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/disable_skin_control.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_skin_control.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/disable_thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/disable_thermal_temp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal_temp.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/disable_throttling.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_throttling.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/fix_ttj_85.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/fix_ttj_85.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/fix_ttj_95.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/fix_ttj_95.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_evb.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_evb.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_hqa_normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_hqa_normal.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_hqa_perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_hqa_perf.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_mtbf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_mtbf.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_policy_00.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_00.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_policy_01.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_01.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_policy_02.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_02.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_policy_03.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_03.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_policy_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_08.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_policy_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_09.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/thermal/thermal_policy_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_10.conf \
     vendor/xiaomi/rodin/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml \
-    vendor/xiaomi/rodin/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/xiaomi/rodin/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
+    vendor/xiaomi/rodin/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/xiaomi/rodin/proprietary/vendor/firmware/BT_FW.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/BT_FW.cfg \
     vendor/xiaomi/rodin/proprietary/vendor/firmware/aw8697_haptic.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_haptic.bin \
     vendor/xiaomi/rodin/proprietary/vendor/firmware/aw8697_rtp_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw8697_rtp_1.bin \
@@ -794,7 +754,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
-    android.hardware.bluetooth.audio-V5-ndk-mtk \
+    android.hardware.audio.core-impl-mediatek \
     android.hardware.bluetooth.audio-impl-mediatek \
     android.hardware.security.keymint-V3-ndk-v34 \
     com.xiaomi.camdfx \
@@ -805,13 +765,13 @@ PRODUCT_PACKAGES += \
     libMEOW_qt \
     libMEOW_trace \
     libGLES_mali \
+    android.hardware.audio.effect.aidl-impl-mediatek \
     android.hardware.gnss-impl-mediatek \
+    android.hardware.sensors@2.X-subhal-mediatek \
     android.hardware.soundtrigger3-impl \
-    audio.bluetooth.default \
     audio.primary.mediatek \
     consumerir.common \
     gps.default \
-    gralloc.default \
     hwcomposer.mtk_common \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.graphics.allocator-V2-mediatek \
@@ -855,10 +815,9 @@ PRODUCT_PACKAGES += \
     libaal_cust \
     libaal_key \
     libaal_sec \
-    libaedv \
     libaimemc \
     libaispq \
-    libalsautils-v34 \
+    libalsautils-mtk \
     libappgamepq \
     libapu_mdw \
     libapu_mdw_batch \
@@ -868,6 +827,7 @@ PRODUCT_PACKAGES += \
     libasn1c_core \
     libasn1c_mapi \
     libasn1c_mdmi \
+    libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_param_parser-vnd \
     libaudiocloudctrl \
     libaudiocompensationfilter_vendor \
@@ -879,6 +839,7 @@ PRODUCT_PACKAGES += \
     libaudiodcrflt_vendor \
     libaudiofmtconv \
     libaudioloudc \
+    libaudiopolicyconfigxml_mtk_vendor \
     libaudioprimarydevicehalifclient \
     libaudiosmartpamtk \
     libaudiotoolkit_vendor \
@@ -919,19 +880,13 @@ PRODUCT_PACKAGES += \
     libccci_util \
     libcmdl \
     libcmdl_ndk.mtk.vndk \
-    libcodec2-mtk \
-    libcodec2_aidl-mtk \
     libcodec2_fsr \
-    libcodec2_hal_common-mtk \
-    libcodec2_hidl@1.0-mtk \
-    libcodec2_hidl@1.1-mtk \
-    libcodec2_hidl@1.2-mtk \
-    libcodec2_hidl_plugin-mtk \
     libcodec2_mtk_c2store \
     libcodec2_mtk_vdec \
     libcodec2_mtk_venc \
-    libcodec2_soft_common-mtk \
-    libcodec2_vndk-mtk \
+    libcodec2_soft_ac4dec \
+    libcodec2_soft_ddpdec \
+    libcodec2_store_dolby \
     libcodec2_vpp_AIMEMC_plugin \
     libcodec2_vpp_AISR_plugin \
     libcodec2_vpp_fa_plugin \
@@ -957,15 +912,19 @@ PRODUCT_PACKAGES += \
     libconnfem \
     libcustom_nvram \
     libcvsd_mtk \
+    libdapparamstorage \
+    libdeccfg \
     libdfintf \
     libdisplayfeature \
     libdisplayfeatureservice \
+    libdlbdsservice \
+    libdlbpreg \
+    libdmshal \
     libecoengine \
     libfeature.hdr10 \
     libfeaturepolicy \
     libfgauge_gm30 \
     libfile_op \
-    libforkexecwrap \
     libformatter \
     libfsmsmartpaparse \
     libfvaudio \
@@ -984,7 +943,6 @@ PRODUCT_PACKAGES += \
     libhfmanagerwrapper \
     libhidparser \
     libhwm \
-    libifcutils_mtk \
     libimagebuffer_wrapper \
     libimgstream_sync \
     libimgsys_osal \
@@ -1124,13 +1082,14 @@ PRODUCT_PACKAGES += \
     libsimlock \
     libsimmelock \
     libsn220u_fw \
+    libspatializerparamstorage \
     libspeech_enh_lib \
     libspeechparser_vendor \
-    libstagefright_bufferqueue_helper-mtk \
     libstorage_otp \
     libsysenv \
     libteecli \
     libtflite_mtk-vendor \
+    libtinyxml2-mtk \
     libtranslator_mapi_v3.0 \
     libtranslator_mdmi_v2.8.2 \
     libtranslator_utils \
@@ -1160,13 +1119,10 @@ PRODUCT_PACKAGES += \
     libvow_ap_test_vaca_nn \
     libvow_comp_test \
     libvpu5 \
-    libwifical \
-    libwifinvram \
-    libwifinvramdata \
-    libwpa_client \
     libwpfa \
     libwvkeybox \
     libxiaomi_mtkril \
+    libxlog \
     arm.graphics-V5-ndk \
     arm.mali.platform-V2-ndk \
     lib3a.ae \
@@ -1564,10 +1520,16 @@ PRODUCT_PACKAGES += \
     rodinsc820csultra_mipi_raw_IdxMgr \
     rodinsc820csultra_mipi_raw_tuning \
     mtk_lbs_service-impl \
+    libdlbvolaidl \
+    libswdapaidl \
+    libswgamedapaidl \
+    libswspatializeraidl \
+    vendor.dolby.dms-V1-ndk \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.mediatek.hardware.apuware.apusys-V5-ndk-vendor \
     vendor.mediatek.hardware.apuware.utils-V1-ndk-vendor \
     vendor.mediatek.hardware.apuware.utils@2.0-vendor \
-    vendor.mediatek.hardware.audio@6.1 \
+    vendor.mediatek.hardware.audio-V1-ndk \
     vendor.mediatek.hardware.bluetooth.audio-V1-ndk \
     vendor.mediatek.hardware.bluetooth.audio@2.1 \
     vendor.mediatek.hardware.bluetooth.audio@2.2 \
@@ -1587,7 +1549,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.gnss-V2-ndk \
-    vendor.mediatek.hardware.gpuserv-V2-ndk \
     vendor.mediatek.hardware.lbs-V1-ndk \
     vendor.mediatek.hardware.mbrain-V6-ndk \
     vendor.mediatek.hardware.mdmonitor-V1-ndk \
@@ -1598,8 +1559,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq-V3-ndk \
     vendor.mediatek.hardware.mms-V1-ndk \
     vendor.mediatek.hardware.mtkpower-V1-ndk \
-    vendor.mediatek.hardware.mtkpower-V2-ndk \
-    vendor.mediatek.hardware.mtkpower_applist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.assist-V2-ndk \
     vendor.mediatek.hardware.mtkradioex.atci-V1-ndk \
     vendor.mediatek.hardware.mtkradioex.cap-V1-ndk \
@@ -1667,7 +1626,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
     libMiVideoFilter \
     lib_remote_simlock \
-    libapu_mdw_ext.mtk \
     libapuwareapusys.mtk \
     libapuwareapusys_v2.mtk \
     libapuwarehmp.mtk \
@@ -1688,15 +1646,10 @@ PRODUCT_PACKAGES += \
     libmvpu_cic_ci_compiler.mtk \
     libmvpu_cic_ci_compiler_25.mtk \
     libmvpu_cic_ci_compiler_30.mtk \
-    libmvpu_clc_14_mvpu_debuginfo_25.mtk \
     libmvpu_clc_14_mvpu_elf_25.mtk \
-    libmvpu_clc_14_mvpu_utility_25.mtk \
-    libmvpu_clc_30_mvpu_debuginfo.mtk \
     libmvpu_clc_30_mvpu_elf.mtk \
     libmvpu_clc_30_mvpu_utility.mtk \
-    libmvpu_clc_mvpu_debuginfo.mtk \
     libmvpu_clc_mvpu_elf.mtk \
-    libmvpu_clc_mvpu_utility.mtk \
     libmvpu_config.mtk \
     libmvpu_engine.mtk \
     libmvpu_engine_25.mtk \
@@ -1713,7 +1666,6 @@ PRODUCT_PACKAGES += \
     libmvpu_runtime_25_pub.mtk \
     libmvpu_runtime_30.mtk \
     libmvpu_runtime_builtin.mtk \
-    libmvpu_runtime_builtin_25.mtk \
     libmvpu_runtime_pub.mtk \
     libmvpuop25_mtk_cv.mtk \
     libmvpuop25_mtk_nn.mtk \
@@ -1884,15 +1836,20 @@ PRODUCT_PACKAGES += \
     libvideomode \
     libwa_widelens_undistort \
     vendor.xiaomi.hardware.framecapturemanager-V1-ndk \
+    vendor.xiaomi.hardware.mediaeventgatherservice-V1-ndk \
     com.google.android.widevine.nonupdatable \
+    CameraExtensionsProxy \
     GpuGameDriver.mt6899 \
     MiuiCit \
     HotwordEnrollmentXGoogleRISCV_WIDEBAND \
     HotwordEnrollmentYGoogleRISCV_WIDEBAND \
     ImsService \
     MtkGbaService \
+    MtkTelephonyAssist \
     JVFactoryTest \
     goodix_sz_rodin \
+    camerax-vendor-extensions \
+    androidx.camera.extensions.impl \
     com.android.hotwordenrollment.common.util \
     mediatek-ims-base \
     mediatek-ims-common \
@@ -1901,6 +1858,8 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-base \
     mediatek-telephony-common \
     CommandService.xml \
+    android.hardware.audio.effect.service-aidl.xml \
+    android.hardware.audio.service-aidl.mediatek.xml \
     android.hardware.gatekeeper-service.mitee.xml \
     android.hardware.identity@5.0-service.mitee.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
@@ -1909,6 +1868,8 @@ PRODUCT_PACKAGES += \
     android.hardware.security.sharedsecret-service.mitee.xml \
     android.hardware.tetheroffload-V1-service.xml \
     arm.mali.platform-mediatek.xml \
+    bluetooth_audio_mtk.xml \
+    dms-service.xml \
     gnss-mtk-default.xml \
     gnss-mtk.xml \
     manifest_allocator.xml \
@@ -1918,11 +1879,11 @@ PRODUCT_PACKAGES += \
     manifest_cameraprovider.xml \
     manifest_hwcomposer.xml \
     manifest_isphal.xml \
-    manifest_media_c2_default.xml \
     manifest_mmlpq.xml \
     manifest_mtkgpuserv.xml \
     manifest_uievent.xml \
     mapper.mediatek.xml \
+    vendor.dolby.media.c2-default-service-dax.xml \
     vendor.xiaomi.hardware.aidlbgservice-service.xml \
     vendor.xiaomi.hardware.batteryantiaging.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
@@ -1944,12 +1905,11 @@ PRODUCT_PACKAGES += \
     displayfeature \
     fuelgauged \
     fuelgauged_nvram \
+    android.hardware.audio.service-aidl.mediatek \
     android.hardware.gatekeeper-service.mitee \
     android.hardware.gnss-service.mediatek \
     android.hardware.graphics.composer@3.3-service \
     android.hardware.identity-service.mitee@5.0 \
-    android.hardware.media.c2-mediatek-64b \
-    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.mitee \
@@ -1958,6 +1918,8 @@ PRODUCT_PACKAGES += \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
+    vendor.dolby.dms.service \
+    vendor.dolby.media.c2-default-service-dax \
     vendor.mediatek.hardware.gpuserv-service \
     vendor.mediatek.hardware.mmagent-service \
     vendor.mediatek.hardware.mmlpq@V1-service \
@@ -1976,9 +1938,7 @@ PRODUCT_PACKAGES += \
     mnld \
     mtk_agpsd \
     muxreport \
-    netdagent \
     nvram_daemon \
-    pnscr \
     rcs_volte_stack \
     tee-supplicant \
     touch_boost \
@@ -1988,6 +1948,7 @@ PRODUCT_PACKAGES += \
     wmt_launcher \
     wmt_loader \
     climax_tfa9873 \
+    android.hardware.audio.parameter_parser.service \
     spkcal \
     spkcal_88263s \
     spkcal_88263s_m16 \
@@ -1995,6 +1956,7 @@ PRODUCT_PACKAGES += \
     spkcal_88263s_n12 \
     spkcal_88263s_n12a \
     spkcal_88263s_o10 \
+    spkcal_p10 \
     spkcal_tfa \
     vtservice \
     fidoca_mitee \
@@ -2053,7 +2015,7 @@ PRODUCT_PACKAGES += \
     vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
     vendor_bin_hw_arm_mali_platform-service_mediatek \
     vendor_bin_hw_camerahalserver \
-    vendor_etc_camera_gma_custom_xml \
+    vendor_etc_camera_mt6899_gma_custom_xml \
     vendor_lib64_egl_libGLES_mali_so \
     vendor_lib64_hw_audio_primary_mt6899_so \
     vendor_lib64_hw_android_hardware_camera_provider@2_6-impl-mediatek_so \
@@ -2469,3 +2431,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_rodinsc820csultra_mipi_raw_4_tuning_so \
     vendor_lib64_rodinsc820csultra_mipi_raw_IdxMgr_so \
     vendor_lib64_rodinsc820csultra_mipi_raw_tuning_so
+
+PRODUCT_BOOT_JARS += \
+    camerax-vendor-extensions

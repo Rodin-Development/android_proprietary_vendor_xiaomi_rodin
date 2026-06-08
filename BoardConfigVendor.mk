@@ -9,7 +9,6 @@ AB_OTA_PARTITIONS += \
     connsys_bt \
     connsys_gnss \
     connsys_wifi \
-    countrycode \
     dpm \
     gpueb \
     gz \
