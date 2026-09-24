@@ -190,6 +190,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.security.keymint-V3-ndk-v36",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.security.keymint-V3-ndk-v36.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.security.secureclock-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "c2.dolby.client",
     owner: "xiaomi",
     strip: {
@@ -257,7 +283,7 @@ cc_prebuilt_library_shared {
                 "libcodec2_soft_common",
                 "libcutils",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v35",
                 "libbase",
                 "liblog",
                 "libcodec2",
@@ -269,7 +295,7 @@ cc_prebuilt_library_shared {
                 "c2.dolby.client",
                 "libstagefright_bufferpool@2.0.1",
                 "libdolbydecoderprocessor",
-                "libui",
+                "libui-v35",
                 "libhidlbase",
                 "libc++",
                 "libc",
@@ -309,7 +335,7 @@ cc_prebuilt_library_shared {
                 "libcodec2_soft_common",
                 "libcutils",
                 "libsfplugin_ccodec_utils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v35",
                 "libbase",
                 "liblog",
                 "libcodec2",
@@ -321,7 +347,7 @@ cc_prebuilt_library_shared {
                 "c2.dolby.client",
                 "libstagefright_bufferpool@2.0.1",
                 "libdolbydecoderprocessor",
-                "libui",
+                "libui-v35",
                 "libhidlbase",
                 "libc++",
                 "libc",
@@ -422,6 +448,154 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libGLES_meow",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libGLES_meow.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libnativewindow",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMEOW_data",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libMEOW_data.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMEOW_gift",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libMEOW_gift.so",
+            ],
+            shared_libs: [
+                "libFrameRecord",
+                "libDefaultFpsActor",
+                "libNoFpsActor",
+                "libnativewindow",
+                "libutilscallstack",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMEOW_qt",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libMEOW_qt.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libnativewindow",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "egl",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libMEOW_trace",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/egl/libMEOW_trace.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libnativewindow",
+                "libGLES_meow",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "egl",
     prefer: true,
     soc_specific: true,
 }
@@ -1757,6 +1931,60 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libDefaultFpsActor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libDefaultFpsActor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libFrameRecord",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libFrameRecord.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libJpgEncPipe",
     owner: "xiaomi",
     strip: {
@@ -1849,6 +2077,33 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libNoFpsActor",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libNoFpsActor.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -5423,7 +5678,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "libstagefright_foundation",
+                "libstagefright_foundation-v33",
                 "liblog",
                 "libxml2",
                 "libcrypto",
@@ -10544,6 +10799,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libstagefright_foundation-v35",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libstagefright_foundation-v35.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libstorage_otp",
     owner: "xiaomi",
     strip: {
@@ -10731,6 +11013,49 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libbase",
                 "libunwindstack",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libui-v35",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libui-v35.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.common-V7-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.allocator@2.0",
+                "android.hardware.graphics.allocator@3.0",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libgralloctypes",
+                "libhidlbase",
+                "libsync",
+                "libutils",
+                "liblog",
+                "libvndksupport",
                 "libc++",
                 "libc",
                 "libm",
@@ -35732,6 +36057,18 @@ android_app_import {
 }
 
 android_app_import {
+    name: "GpuGameDriver.mt6899",
+    owner: "xiaomi",
+    apk: "proprietary/vendor/priv-app/GpuGameDriver.mt6899/GpuGameDriver.mt6899.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    soc_specific: true,
+}
+
+android_app_import {
     name: "MiuiCit",
     owner: "xiaomi",
     apk: "proprietary/product/app/MiuiCit/MiuiCit.apk",
@@ -36819,7 +37156,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/android.hardware.security.keymint@3.0-service.mitee",
             ],
             shared_libs: [
-                "android.hardware.security.keymint-V3-ndk",
+                "android.hardware.security.keymint-V3-ndk-v36",
                 "libteecli",
                 "libhidlbase",
                 "android.hardware.security.rkp-V3-ndk",
@@ -38366,7 +38703,7 @@ cc_prebuilt_binary {
                 "libcutils",
                 "libhardware",
                 "libbase",
-                "libtinyxml2-v36",
+                "libtinyxml2",
                 "libjsoncpp",
                 "libbinder_ndk",
                 "libutils",
